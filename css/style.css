@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+
+/*NAVEGADOR PRINCIPAL*/
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: white ;
+    height: 100%;
+    width: 100%;
+}
+.ul1 { 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        height: 11.5vw;
+        width: 100%;
+        list-style-type: none;
+}
+.ul1 li a {
+    text-decoration:none;
+    padding: 2vw;
+    font-size: 2.5rem;
+}
+
+.logo {
+    width: 10vw;
+}
+
+/*INDEX*/
+
+.portada {
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.principal1 {
+    height: 50vw ;
+    width:  60vw ;
+}
+
+/*Contacto*/
+
+.mainc {
+    background: url(../assets/img/FONDO\ CONTACTO.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80vw;
+    background-color: rgba(128, 128, 128, 0.555);
+    border-style:none; 
+    padding-bottom: 10%;
+}
+
+
+/* PORTFOLIO Responsive*/
+
+.mainp {
+    background-color: black;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat (4 ,1fr);
+    grid-template-rows: repeat (2, 2fr);
+    grid-template-areas:
+    " foto1 foto2 foto3 foto4"
+    " foto5 foto6 foto7 foto8";
+    width: 100%;
+    max-width: 1700px;
+    
+}
+.foto1 {
+    width: 476px;
+    height: 650px;
+}
+.foto2 {
+    width: 476px;
+    height: 650px;
+}
+.foto3 {
+    width: 476px;
+    height: 650px;
+}
+.foto4 {
+    width: 476px;
+    height: 650px;
+}
+.foto5 {
+    width: 476px;
+    height: 650px;
+}
+.foto6 {
+    width: 476px;
+    height: 650px;
+}
+.foto7 {
+    width: 476px;
+    height: 650px;
+}
+.foto8 {
+    width: 476px;
+    height: 650px;
+}
+.pp {
+    text-align: center;
+    word-spacing: 1;
+    letter-spacing: 0.1rem;
+    background-color: rgba(0, 0, 255, 0.452);
+    color: black;
+    background-image: url(../assets/img/FONDO\ CONTACTO.jpg);
+}
+
+/*SHOPS*/
+
+.shops {
+    display: flex;
+    justify-content: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    background: black;
+    height: 100%;
+    padding: 50px;
+}
+.pdiv {
+        background-color:white;
+        width: 600px;
+        height: 650px;
+        display: inline-block;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px;
+        border-radius: 2%;
+}
+.sp{
+    color: black ;
+}
+
+.fotosshop {
+    width: 325px;
+    height: 425px;
+
+}
+.fotosshop:hover {
+        scale: 1.5;
+        opacity: 100%;
+}
+
+
+/*About Me*/
+
+.ammain {
+    background: url(../Assets/Img/principal6.jpeg);
+    width: 119rem;
+    height: 118rem;
+    background-size: cover
+}
+        
+.amdiv {
+    text-align: center;
+    word-spacing: 1.5;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+}
+
+#contenedorcarousel {
+    margin-top: 0%;
+    margin-right: 35%;
+    margin-left: 35%; 
+    margin-bottom: 0%;
+}
+
+.imgaboutme{
+    width: 476px;
+    height: 650px;
+}
+
+
+/*Footer */
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 5rem;
+    width: 100%;
+    background-color:  white;
+    font-size: 2rem;
+    margin-top: 1.5vw;
+
+}
+
+.fdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    align-content: space-around;
+}
+
+.fdiv img {
+    width: 4vw;
+    margin-top: 1vw;
+}
+
+.grupo2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5vw;
+    font-size: 1rem;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:576px) {
+    .pie-pagina{ margin-top: 3vw;}
+    .nav{ width: 100%; 
+        font-size: 15px;
+        background-color: black;}
+}
+
